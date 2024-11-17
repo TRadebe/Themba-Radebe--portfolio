@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themba Radebe - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="home-content">
+        <h1>Welcome to Themba Radebe's Professional Portfolio</h1>
+        <p>Aspiring Software Engineer specializing in Back-End Development</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="about-section">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>As a dedicated and passionate software engineer with a strong foundation in full stack development and a specialization in back-end technologies, I am committed to creating efficient, scalable, and robust software solutions. My education at ALX Africa has equipped me with comprehensive technical skills and practical experience in various programming languages and development frameworks. I am eager to leverage my expertise to contribute to innovative projects and drive technological advancements.</p>
+        </div>
+        <div class="about-image">
+            <img src="C:\Users\Sasams server\OneDrive - Gauteng Department of Education\Desktop\portfolio\images\WhatsApp Image 2024-11-17 at 17.32.40.jpeg" alt="Themba Radebe">
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+        <!-- Airbnb Clone Project -->
+        <div class="project-card">
+            <h3>Airbnb Clone Website</h3>
+            <p>Developed a fully functional clone of the Airbnb website using Python, focusing on back-end development. Implemented features such as user authentication, property listings, booking management, and reviews.</p>
+            <button class="btn" onclick="openModal('airbnbModal')">Learn More</button>
+        </div>
+        <!-- Simple Shell Project -->
+        <div class="project-card">
+            <h3>Simple Shell Project</h3>
+            <p>Created a simple shell in C that mimics basic Unix shell functionalities. The project involved command parsing, process management, and implementing built-in shell commands.</p>
+            <button class="btn" onclick="openModal('shellModal')">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modals for More Info -->
+<div id="airbnbModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('airbnbModal')">&times;</span>
+        <h2>Airbnb Clone Website</h2>
+        <p><strong>Overview:</strong> A clone of the Airbnb website built with Python, focusing on back-end functionality. Features include user registration, login, property listings, reviews, and bookings.</p>
+        <p><strong>Technologies Used:</strong> Python, Django, PostgreSQL, HTML, CSS, JavaScript.</p>
+        <p><strong>Challenges & Solutions:</strong> Overcame challenges with handling concurrent bookings and user authentication. Implemented a custom authentication system and used database transactions for booking management.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>User Registration/Login</li>
+            <li>Property Listings & Search</li>
+            <li>Booking Management</li>
+            <li>Review System</li>
+        </ul>
+        <p><a href="https://github.com/TRadebe/AirBnB_clone_v4" target="_blank">GitHub Repository</a></p>
+    </div>
+</div>
+
+<div id="shellModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('shellModal')">&times;</span>
+        <h2>Simple Shell Project</h2>
+        <p><strong>Overview:</strong> A simple shell project created in C, mimicking basic Unix shell functionalities such as parsing commands, managing processes, and implementing built-in shell commands like `cd`, `exit`, etc.</p>
+        <p><strong>Technologies Used:</strong> C, Linux Shell, Bash Commands.</p>
+        <p><strong>Challenges & Solutions:</strong> Faced challenges with process management and command parsing, overcame it by learning to use `fork()`, `exec()`, and `waitpid()` for process control.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Command Parsing</li>
+            <li>Process Management</li>
+            <li>Built-in Commands: `cd`, `exit`, etc.</li>
+        </ul>
+        <p><a href="https://github.com/TRadebe/simple_shell" target="_blank">GitHub Repository</a></p>
+    </div>
+</div>
+
+
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <h3>Programming Languages</h3>
+            <p>Python, JavaScript, Java, C++</p>
+        </div>
+        <div class="skill">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, React, Angular</p>
+        </div>
+        <div class="skill">
+            <h3>Back-End Technologies</h3>
+            <p>Node.js, Express.js, Django, Flask, SQL, MongoDB</p>
+        </div>
+        <div class="skill">
+            <h3>DevOps</h3>
+            <p>Docker, Kubernetes, Jenkins, CI/CD</p>
+        </div>
+        <div class="skill">
+            <h3>Cloud Platforms</h3>
+            <p>AWS, Azure, Google Cloud</p>
+        </div>
+        <div class="skill">
+            <h3>Version Control</h3>
+            <p>Git, GitHub, GitLab</p>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="education-timeline">
+        <div class="education-item">
+            <h3>ALX Africa</h3>
+            <p>Software Engineering Full Stack</p>
+            <p>Specialization: Back-End Development</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="social-links">
+        <a href="https://https://www.linkedin.com/in/tradebe-seprofessinal/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/TRadebe" target="_blank">GitHub</a>
+        <a href="thembaradebe172@outlook.com">Email</a>
+    </div>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>
